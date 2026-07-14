@@ -1,17 +1,45 @@
-# weather_app
+# ☀️ weather_app
 
-A new Flutter project.
+OpenWeather API를 활용하여 현재 날씨를 조회하고, 날씨에 맞는 옷차림을 추천하는 Flutter 서비스입니다.
 
-## Getting Started
+## 사용한 기술
+```
+Flutter | Dart | Provider | HTTP | OpenWeather API
+```
 
-This project is a starting point for a Flutter application.
+## 프로젝트 구조
 
-A few resources to get you started if this is your first Flutter project:
+```text
+lib
+├── model
+├── provider
+├── screen
+├── service
+└── main.dart
+```
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## 프로젝트 소개
+현재의 서울 날씨 정보를 제공하고, 온도와 습도를 기반으로 사용자에게 적절한 옷차림을 추천하는 앱입니다.
+<br>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 주요기능
+* 현재 서울 날씨 조회
+* 현재 서울 온도 표시
+* 서울 습도 정보 제공
+* 날씨에 따른 옷 추천
+
+<br>
+
+### 배운점
+* OpenWeather API를 활용해서 외부 API를 연동하는법을 배웠습니다.
+* JSON 데이터를 모델 클래스로 변환하여 활용하는 법을 배웠습니다.
+* async/await를 이용하여 비동기 통신을 처리하는 법을 배웠습니다.
+* Provider를 활용한 상태관리를 사용해보며 상태관리에 대해 더 자세히 알 수 있었습니다.
+
+<br>
+
+### 개선해 나갈 점
+* 먼저 도시 검색 기능을 추가하여 서울뿐만 아니라 여러지역으로 서비스를 확대할것입니다.
+* 시간 및 주간 날씨 예보 기능을 추가할것입니다.
+* 현재 위치(GPS)를 기반으로한 날씨 조회 기능을 추가할것입니다.
+* UI/UX를 개선하여 사용자가 더 편하게 서비스를 이용할 수 있도록 할것입니다.
